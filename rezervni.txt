@@ -1,0 +1,25 @@
+<ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/activity_restaurant"/>
+
+<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_item"
+        android:text="Add menu item"
+        android:textSize="23dp"
+        android:backgroundTint="#918D02"
+        android:layout_marginBottom="20dp"/>
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/activity_restaurant"/>
+
+<ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/activity_restaurant"/>

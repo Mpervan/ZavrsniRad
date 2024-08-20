@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#DDE89C"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="0dp"
+        android:background="#D56C13"
+        android:orientation="vertical"
+        tools:context=".OrderActivity">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="#E18D4C"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#453020"
+            android:textSize="23dp" />
+        <Button
+            android:id="@+id/cancel1"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-87dp"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="220dp"
+            android:backgroundTint="#AC5612"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#E8CFBB"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_horizontal"
+                android:text="New Order"
+                android:textColor="#C1450C"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_item"
+                android:text="Add order items"
+                android:textSize="23dp"
+                android:backgroundTint="#7E9714"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm1"
+                android:text="Confirm Order"
+                android:textSize="23dp"
+                android:backgroundTint="#4E9102"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_horizontal"
+                android:text="Click on item to remove"
+                android:textColor="#C1450C"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+            <ListView
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_layout"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

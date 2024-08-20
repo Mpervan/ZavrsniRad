@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#E8F1B7"
+    android:orientation="vertical"
+    tools:context=".ViewOrderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="0dp"
+        android:background="#D56C13"
+        android:orientation="vertical"
+        tools:context=".ViewOrderActivity">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="#E18D4C"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#453020"
+            android:textSize="23dp" />
+        <Button
+            android:id="@+id/order"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-87dp"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="220dp"
+            android:backgroundTint="#AC5612"
+            android:gravity="center"
+            android:text="Order"
+            android:textColor="#E8CFBB"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="Order Number"
+        android:textColor="#8F4403"
+        android:textSize="38dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="Time"
+        android:textColor="#5C5005"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Price:"
+        android:textColor="#5C5005"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left"
+        android:text="Price"
+        android:textColor="#C35820"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Restaurant:"
+        android:textColor="#5C5005"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="-65dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="left"
+        android:text="Restaurant"
+        android:textColor="#C35820"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Address:"
+        android:textColor="#5C5005"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/address2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="-65dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Address"
+        android:textColor="#829E08"
+        android:textSize="20dp" />
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_layout" />
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#8E973A"
+    android:orientation="vertical"
+    tools:context=".ConfirmOrderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_horizontal"
+        android:text="Confirm"
+        android:textColor="#FFFADA"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:text="Order"
+        android:textColor="#FFF091"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Delivery Address"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Phone Number"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="Price"
+        android:textColor="#C3380D"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm2"
+        android:text="Confirm"
+        android:textSize="23dp"
+        android:backgroundTint="#058E33"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel2"
+        android:text="Cancel"
+        android:textSize="23dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#A1290B"
+        android:layout_marginBottom="38dp"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Prehrambenica1"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewYourOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmOrderAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BecomeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditRestaurantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOrderAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateRestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

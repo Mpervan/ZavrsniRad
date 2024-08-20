@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#88c227"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="Sign Up"
+        android:textColor="#FFF091"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Full Name"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="E-mail"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Register"
+        android:textSize="23dp"
+        android:backgroundTint="#453020"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Already have an account"
+        android:textSize="18dp"
+        android:textColor="#453020"
+        android:backgroundTint="#AED567"
+        android:layout_marginBottom="38dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="5dp"
+    android:padding="0dp"
+    android:background="@drawable/itembackground"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_item" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="-90dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Item Name"
+        android:textColor="#5E6804"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="228dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Price"
+        android:textColor="#BA3A08"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

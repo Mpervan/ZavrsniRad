@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#F2F4B3"
+    android:orientation="vertical"
+    tools:context=".RestaurantOrderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="0dp"
+        android:background="#D56C13"
+        android:orientation="vertical"
+        tools:context=".HomeAdminActivity">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="#E18D4C"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#453020"
+            android:textSize="23dp" />
+        <Button
+            android:id="@+id/viewOrder"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-87dp"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="220dp"
+            android:backgroundTint="#AC5612"
+            android:gravity="center"
+            android:text="Order"
+            android:textColor="#E8DDBB"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blur_rest" />
+
+            <TextView
+                android:id="@+id/rest_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="Restaurant Name"
+                android:textColor="#753205"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:text="New Orders:"
+                android:textColor="#B80E08"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/rest_list3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/order_layout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:text="Orders in progress:"
+                android:textColor="#7E9500"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/rest_list_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/order_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

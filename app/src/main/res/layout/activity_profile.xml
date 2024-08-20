@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#DDEF9D"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="0dp"
+        android:background="#D56C13"
+        android:orientation="vertical"
+        tools:context=".ProfileActivity">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="#E18D4C"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#453020"
+            android:textSize="23dp" />
+        <Button
+            android:id="@+id/viewOrder"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-87dp"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="220dp"
+            android:backgroundTint="#AC5612"
+            android:gravity="center"
+            android:text="Order"
+            android:textColor="#E8CFBB"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit_image"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unknown_person"
+        />
+
+    <TextView
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="User"
+        android:textColor="#5C5005"
+        android:textSize="38dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="left"
+        android:text="Full Name:"
+        android:textColor="#8A5801"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="left"
+        android:text="Address"
+        android:textColor="#618303"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="left"
+        android:text="Phone Number"
+        android:textColor="#9F7D15"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Email Address:"
+        android:textColor="#068730"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/role1"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-230dp"
+        android:gravity="left"
+        android:layout_marginLeft="300dp"
+        android:textColor="#478E02"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:text="Edit Profile"
+        android:textSize="23dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:backgroundTint="#ACB119"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/change_password"
+        android:text="Change Password"
+        android:textSize="23dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:backgroundTint="#E4B300"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/logout"
+        android:text="Logout"
+        android:textSize="23dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#A64009"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#E8F1B7"
+    android:orientation="vertical"
+    tools:context=".ViewOrderAdminActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="0dp"
+        android:background="#D56C13"
+        android:orientation="vertical"
+        tools:context=".ViewOrderAdminActivity">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="#E18D4C"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#453020"
+            android:textSize="23dp" />
+        <Button
+            android:id="@+id/order"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-87dp"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="220dp"
+            android:backgroundTint="#AC5612"
+            android:gravity="center"
+            android:text="Order"
+            android:textColor="#E8CFBB"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/orderNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="62dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_horizontal"
+                android:text="New order number: 000"
+                android:textColor="#5E8F03"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="Time"
+                android:textColor="#5A6300"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/address3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="Address"
+                android:textColor="#9F3605"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="Call Number:"
+                android:textColor="#5C5005"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/callNumber"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="-56dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="left"
+                android:text="Phone"
+                android:textColor="#C38720"
+                android:textSize="23dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="Price:"
+                android:textColor="#5C5005"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:text="Price"
+                android:textColor="#D82D16"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="-46dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="User:"
+                android:textColor="#5C5005"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="User"
+                android:textColor="#959205"
+                android:textSize="23dp"
+                android:textStyle="bold"/>
+
+
+            <ListView
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_layout" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm"
+                android:text="Confirm"
+                android:textSize="23dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:backgroundTint="#60B119"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:textSize="23dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:backgroundTint="#A64009"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

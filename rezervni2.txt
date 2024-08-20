@@ -1,0 +1,28 @@
+orders
+0- ID INT NOT NULL UNIQUE primary key, 
+1- number INT, 
+2- address TEXT,
+3- callNumber TEXT,
+4- itemID INT,
+5- user TEXT,
+6- restaurantID INT,
+7- price TEXT,
+8- time TEXT,
+9- status TEXT)");
+
+menuItems
+0- ID INT NOT NULL UNIQUE primary key,
+1- itemName TEXT,
+2- restaurantID INT,
+3- price TEXT,
+4- description TEXT)");
+
+restaurants
+0- ID INT NOT NULL UNIQUE primary key, 
+1 - name TEXT, 
+2 - address TEXT, 
+3 - phone TEXT, 
+4 - description TEXT, 
+5 - open TEXT, 
+6- owner TEXT, 
+7 - image BLOB)");
